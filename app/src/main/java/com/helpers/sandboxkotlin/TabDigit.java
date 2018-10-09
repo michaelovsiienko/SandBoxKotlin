@@ -10,6 +10,7 @@ import android.graphics.Paint;
 import android.graphics.Rect;
 import android.graphics.RectF;
 import android.os.Build;
+import android.support.v4.content.res.ResourcesCompat;
 import android.support.v4.view.ViewCompat;
 import android.util.AttributeSet;
 import android.view.View;
@@ -130,14 +131,15 @@ public class TabDigit extends View implements Runnable {
     private void initPaints() {
         mNumberPaint = new Paint();
         mNumberPaint.setAntiAlias(true);
+        mNumberPaint.setTypeface(ResourcesCompat.getFont(getContext(), R.font.cinzel_decorative));
         mNumberPaint.setStyle(Paint.Style.FILL_AND_STROKE);
         mNumberPaint.setColor(Color.WHITE);
-
         mDividerPaint = new Paint();
         mDividerPaint.setAntiAlias(true);
         mDividerPaint.setStyle(Paint.Style.FILL_AND_STROKE);
         mDividerPaint.setColor(Color.WHITE);
         mDividerPaint.setStrokeWidth(1);
+
 
         mBackgroundPaint = new Paint();
         mBackgroundPaint.setAntiAlias(true);

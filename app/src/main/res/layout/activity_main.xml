@@ -15,6 +15,37 @@
     <com.helpers.sandboxkotlin.CountdownFantasyView
         android:id="@+id/clocl_fantasy"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:minHeight="100dp" />
+
+    <rm.com.clocks.ClockImageView
+        android:id="@+id/clocks"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone"
+        app:clockColor="#000"
+        app:frameWidth="regular"
+        app:indeterminateSpeed="2"
+        app:pointerWidth="thin"
+        app:timeSetDuration="400" />
+
+    <TextView
+        android:id="@+id/tvTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#000" />
+
+    <com.github.anastr.flattimelib.CountDownTimerView
+        android:id="@+id/mCountDownTimer"
+        android:layout_width="150dp"
+        android:layout_height="150dp" />
+
+    <com.github.anastr.flattimelib.HourGlassView
+        android:id="@+id/mHourGlassView"
+        android:layout_width="150dp"
+        android:layout_height="150dp" />
 
 </LinearLayout>

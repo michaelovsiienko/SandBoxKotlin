@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merge xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:clock="http://schemas.android.com/apk/res-auto">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:clock="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal">
 
     <com.helpers.sandboxkotlin.TabDigit
         android:id="@+id/charVeryHighHour"
@@ -9,7 +13,7 @@
         clock:backgroundColor="#000000"
         clock:padding="10dp"
         clock:textColor="#ffffff"
-        clock:textSize="300dp" />
+        clock:textSize="36sp" />
 
     <com.helpers.sandboxkotlin.TabDigit
         android:id="@+id/charHighHour"
@@ -18,7 +22,7 @@
         clock:backgroundColor="#000000"
         clock:padding="10dp"
         clock:textColor="#ffffff"
-        clock:textSize="300dp" />
+        clock:textSize="36sp" />
 
     <com.helpers.sandboxkotlin.TabDigit
         android:id="@+id/charLowHour"
@@ -27,7 +31,7 @@
         clock:backgroundColor="#000000"
         clock:padding="10dp"
         clock:textColor="#ffffff"
-        clock:textSize="300dp" />
+        clock:textSize="36sp" />
 
     <FrameLayout
         android:layout_width="wrap_content"
@@ -52,7 +56,7 @@
         clock:backgroundColor="#000000"
         clock:padding="10dp"
         clock:textColor="#ffffff"
-        clock:textSize="300dp" />
+        clock:textSize="36sp" />
 
     <com.helpers.sandboxkotlin.TabDigit
         android:id="@+id/charLowMinute"
@@ -61,7 +65,7 @@
         clock:backgroundColor="#000000"
         clock:padding="10dp"
         clock:textColor="#ffffff"
-        clock:textSize="300dp" />
+        clock:textSize="36sp" />
 
     <FrameLayout
         android:layout_width="wrap_content"
@@ -87,7 +91,7 @@
         clock:backgroundColor="#000000"
         clock:padding="10dp"
         clock:textColor="#ffffff"
-        clock:textSize="300dp" />
+        clock:textSize="36sp" />
 
     <com.helpers.sandboxkotlin.TabDigit
         android:id="@+id/charLowSecond"
@@ -96,5 +100,5 @@
         clock:backgroundColor="#000000"
         clock:padding="10dp"
         clock:textColor="#ffffff"
-        clock:textSize="300dp" />
-</merge>
+        clock:textSize="36sp" />
+</LinearLayout>
